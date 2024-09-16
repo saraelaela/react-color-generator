@@ -13,7 +13,10 @@ Our suggestions for breaking down the task into TODOs:
 
 // TODO
 
-- [ ] find a library
+- [ ] Use the useState hook to store the current color value
+- [ ] Generate a random hex color by getting a random number and converting to hex
+- [ ] Update the color state to trigger a re-render with the new color
+- [ ] Set the div background color to match the current color value
 
 // the proposed solution (if there is one)
 

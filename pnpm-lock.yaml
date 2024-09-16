@@ -11,6 +11,9 @@ importers:
       '@upleveled/react-scripts':
         specifier: 5.0.13
         version: 5.0.13(@types/babel__core@7.20.5)(eslint@8.57.0)(react@18.3.1)(sass@1.78.0)(type-fest@0.21.3)(typescript@5.6.2)
+      hex-color-randomizer:
+        specifier: ^1.0.5
+        version: 1.0.5
       randomcolor:
         specifier: ^0.6.2
         version: 0.6.2
@@ -3011,6 +3014,10 @@ packages:
   he@1.2.0:
     resolution: {integrity: sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==}
     hasBin: true
+
+  hex-color-randomizer@1.0.5:
+    resolution: {integrity: sha512-YeDNK1+modH+ijnW42DFC1pFd91vDF2jEk/kXL+T19pYUp+vkiOShPg5ErhIEzFL0V26qRi7h27iYrvOMiekVg==}
+    engines: {node: '>=14'}
 
   hoopy@0.1.4:
     resolution: {integrity: sha512-HRcs+2mr52W0K+x8RzcLzuPPmVIKMSv97RGHy0Ea9y/mpcaK+xTrjICA04KAHi4GRzxliNqNJEFYWHghy3rSfQ==}
@@ -9466,6 +9473,8 @@ snapshots:
       function-bind: 1.1.2
 
   he@1.2.0: {}
+
+  hex-color-randomizer@1.0.5: {}
 
   hoopy@0.1.4: {}
 
