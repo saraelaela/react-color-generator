@@ -22,6 +22,10 @@ export default function App() {
   const [color, setColor] = useState(generateRandomColor);
   const rgbColor = hexToRgba(color).rgbaString;
   const colorName = GetColorName(color);
+  const complementaryPalette =
+    ColorGenerator.generateComplementaryPalette(color)[1];
+  const [isColor, setIsColor] = useState(true);
+  const [isComplementaryPalette, setComplementaryPalette] = useState(true);
 
   // line 2, executing the defined code
   return (
@@ -31,10 +35,20 @@ export default function App() {
           Sara El Abed <br /> Cohort Fall 2024
         </div>
         <div style={{ flexGrow: 3 }}>
-          HEX {color} <br /> {rgbColor} {colorName}
+          HEX {color} <br /> {rgbColor}
         </div>
         <div style={{ flexGrow: 3, textAlign: 'right' }}>
           <button
+            style={{
+              borderColor: 'black',
+              borderRadius: 30,
+              borderWidth: 1,
+              paddingLeft: 15,
+              paddingRight: 15,
+              paddingTop: 8,
+              paddingBottom: 8,
+              backgroundColor: 'white',
+            }}
             onClick={() => setColor(ColorGenerator.generateRandomHexColor())}
           >
             random
@@ -46,6 +60,7 @@ export default function App() {
         color={color}
         setColor={setColor}
         colorName={colorName}
+        complementaryPalette={complementaryPalette}
       />
     </>
   );
