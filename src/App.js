@@ -11,12 +11,11 @@ export default function App() {
   // line 2, executing the defined code
   return (
     <>
-      <h1>This is the color generator</h1>
-      <div style={{ backgroundColor: color }}>Current color is {color}</div>
-      <input
-        value={color}
-        onChange={(event) => setColor(event.currentTarget.value)}
-      ></input>
+      <div>
+        <div>Info 1</div>
+        <div>Info 2</div>
+        <div>Info 3</div>
+      </div>
       <button onClick={() => setColor(ColorGenerator.generateRandomHexColor())}>
         random
       </button>
