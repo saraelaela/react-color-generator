@@ -11,9 +11,21 @@ importers:
       '@upleveled/react-scripts':
         specifier: 5.0.13
         version: 5.0.13(@types/babel__core@7.20.5)(eslint@8.57.0)(react@18.3.1)(sass@1.78.0)(type-fest@0.21.3)(typescript@5.6.2)
+      colornames:
+        specifier: github:timoxley/colornames
+        version: https://codeload.github.com/timoxley/colornames/tar.gz/d61b23141e2659782ae941b2089b73f48aafdd67
+      colour-codes:
+        specifier: ^1.0.8
+        version: 1.0.8
       hex-color-randomizer:
         specifier: ^1.0.5
         version: 1.0.5
+      hex-color-to-color-name:
+        specifier: ^1.0.2
+        version: 1.0.2
+      random-color:
+        specifier: ^1.0.1
+        version: 1.0.1
       randomcolor:
         specifier: ^0.6.2
         version: 0.6.2
@@ -1959,6 +1971,10 @@ packages:
     resolution: {integrity: sha512-BSeNnyus75C4//NQ9gQt1/csTXyo/8Sb+afLAkzAptFuMsod9HFokGNudZpi/oQV73hnVK+sR+5PVRMd+Dr7YQ==}
     engines: {node: '>=12'}
 
+  clone@1.0.4:
+    resolution: {integrity: sha512-JQHZ2QMW6l3aH/j6xCqQThY/9OH4D/9ls34cgkUBiEeocRTU04tHfKPBsUK1PqZCUQM7GiA0IIXJSuXHI64Kbg==}
+    engines: {node: '>=0.8'}
+
   co@4.6.0:
     resolution: {integrity: sha512-QVb0dM5HvG+uaxitm8wONl7jltx8dqhfU33DcqtOZcLSVIKSDDLDi7+0LbAKiyI8hD9u42m2YxXSkMGWThaecQ==}
     engines: {iojs: '>= 1.0.0', node: '>= 0.12.0'}
@@ -1983,11 +1999,24 @@ packages:
   color-name@1.1.4:
     resolution: {integrity: sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==}
 
+  color-string@0.3.0:
+    resolution: {integrity: sha512-sz29j1bmSDfoAxKIEU6zwoIZXN6BrFbAMIhfYCNyiZXBDuU/aiHlN84lp/xDzL2ubyFhLDobHIlU1X70XRrMDA==}
+
+  color@0.11.4:
+    resolution: {integrity: sha512-Ajpjd8asqZ6EdxQeqGzU5WBhhTfJ/0cA4Wlbre7e5vXfmDSmda7Ov6jeKoru+b0vHcb1CqvuroTHp5zIWzhVMA==}
+
   colord@2.9.3:
     resolution: {integrity: sha512-jeC1axXpnb0/2nn/Y1LPuLdgXBLH7aDcHu4KEKfqw3CUhX7ZpfBSlPKyqXE6btIgEzfWtrX3/tyBCaCvXvMkOw==}
 
   colorette@2.0.20:
     resolution: {integrity: sha512-IfEDxwoWIjkeXL1eXcDiow4UbKjhLdq6/EuSVR9GMN7KVH3r9gQ83e73hsz1Nd1T3ijd5xv1wcWRYO+D6kCI2w==}
+
+  colornames@https://codeload.github.com/timoxley/colornames/tar.gz/d61b23141e2659782ae941b2089b73f48aafdd67:
+    resolution: {tarball: https://codeload.github.com/timoxley/colornames/tar.gz/d61b23141e2659782ae941b2089b73f48aafdd67}
+    version: 1.1.1
+
+  colour-codes@1.0.8:
+    resolution: {integrity: sha512-al7QzEKhQsvUOjbNkIwBHVq7msWjSD+0XVt/TrWh1Db9L/k7SH+uUHKaNC/pzLb7mDG1LkZWimY6Gh9ZDrV3fA==}
 
   commander@2.20.3:
     resolution: {integrity: sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==}
@@ -3021,6 +3050,9 @@ packages:
   hex-color-randomizer@1.0.5:
     resolution: {integrity: sha512-YeDNK1+modH+ijnW42DFC1pFd91vDF2jEk/kXL+T19pYUp+vkiOShPg5ErhIEzFL0V26qRi7h27iYrvOMiekVg==}
     engines: {node: '>=14'}
+
+  hex-color-to-color-name@1.0.2:
+    resolution: {integrity: sha512-YKPBFTSbYIHH8YKcJB4Q5PV+Tr+kvDXpV60BcPMUu5CSZUcc/qOOx7lkr7luk6MSXKd5A82yfPGZTgedIdQ+aA==}
 
   hoopy@0.1.4:
     resolution: {integrity: sha512-HRcs+2mr52W0K+x8RzcLzuPPmVIKMSv97RGHy0Ea9y/mpcaK+xTrjICA04KAHi4GRzxliNqNJEFYWHghy3rSfQ==}
@@ -4594,6 +4626,9 @@ packages:
 
   raf@3.4.1:
     resolution: {integrity: sha512-Sq4CW4QhwOHE8ucn6J34MqtZCeWFP2aQSmrlroYgqAV1PjStIhJXxYuTgUIfkEk7zTLjmIjLmU5q+fbD1NnOJA==}
+
+  random-color@1.0.1:
+    resolution: {integrity: sha512-6IV6i3HHKluwo6GmRtgestd1nABtFrwUrmJ2rQpymwQt8/X2ZoC7z8SWxeF9KC8FoBFEAuHpwWI76uJ19+2j8A==}
 
   randombytes@2.1.0:
     resolution: {integrity: sha512-vYl3iOX+4CKUWuxGi9Ukhie6fsqXqS9FE2Zaic4tNFD2N2QQaXOMFbuKK4QmDHC0JO6B1Zp41J0LpT0oR68amQ==}
@@ -8213,6 +8248,8 @@ snapshots:
       strip-ansi: 6.0.1
       wrap-ansi: 7.0.0
 
+  clone@1.0.4: {}
+
   co@4.6.0: {}
 
   coa@2.0.2:
@@ -8235,9 +8272,23 @@ snapshots:
 
   color-name@1.1.4: {}
 
+  color-string@0.3.0:
+    dependencies:
+      color-name: 1.1.4
+
+  color@0.11.4:
+    dependencies:
+      clone: 1.0.4
+      color-convert: 1.9.3
+      color-string: 0.3.0
+
   colord@2.9.3: {}
 
   colorette@2.0.20: {}
+
+  colornames@https://codeload.github.com/timoxley/colornames/tar.gz/d61b23141e2659782ae941b2089b73f48aafdd67: {}
+
+  colour-codes@1.0.8: {}
 
   commander@2.20.3: {}
 
@@ -9484,6 +9535,8 @@ snapshots:
   he@1.2.0: {}
 
   hex-color-randomizer@1.0.5: {}
+
+  hex-color-to-color-name@1.0.2: {}
 
   hoopy@0.1.4: {}
 
@@ -11157,6 +11210,10 @@ snapshots:
   raf@3.4.1:
     dependencies:
       performance-now: 2.1.0
+
+  random-color@1.0.1:
+    dependencies:
+      color: 0.11.4
 
   randombytes@2.1.0:
     dependencies:
