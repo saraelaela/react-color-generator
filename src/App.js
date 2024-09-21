@@ -85,7 +85,7 @@ export default function App() {
               setColor(randomColor); // Update the color state with random color
             }}
           >
-            random
+            Generate
           </button>
         </div>
       </div>
