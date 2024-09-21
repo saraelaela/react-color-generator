@@ -6,7 +6,6 @@ import styles from './App.module.scss';
 import ExampleComponents from './ExampleComponents';
 
 export default function App() {
-  //01)  Generate a random color at the start
   const generateRandomColor = () => ColorGenerator.generateRandomHexColor();
 
   // 02) States for color and input
@@ -43,11 +42,11 @@ export default function App() {
 
   // Function to progressively update the color based on user input
   function updateColor(existingColor, userInput) {
-    let baseColor = existingColor.replace('#', ''); // Existing color without the '#'
-    let newInput = userInput.replace('#', ''); // User input without the '#'
+    const baseColor = existingColor.replace('#', ''); // Existing color without the '#'
+    const newInput = userInput.replace('#', ''); // User input without the '#'
 
     // Combine user input with remaining characters from the existing color
-    let updatedColor = newInput + baseColor.slice(newInput.length);
+    const updatedColor = newInput + baseColor.slice(newInput.length);
 
     // Ensure the final color is 6 characters long
     return `#${updatedColor.slice(0, 6)}`;

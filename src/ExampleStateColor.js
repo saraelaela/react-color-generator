@@ -1,10 +1,9 @@
-import { ColorGenerator } from 'hex-color-randomizer';
 import { useState } from 'react';
 
 export default function ExampleStateColor() {
   const [count, setCount] = useState(0);
-  let colorValue = Math.floor(Math.random() * 100000);
-  let hexColor = '#' + count;
+  const colorValue = Math.floor(Math.random() * 100000);
+  const hexColor = '#' + count;
   return (
     <div style={{ backgroundColor: hexColor }}>
       <div>{hexColor} </div>
